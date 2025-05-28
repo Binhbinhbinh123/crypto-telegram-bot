@@ -117,7 +117,7 @@ def check_and_alert():
                 pattern = detect_wedge_pattern(df)
                 if pattern["found"] and pattern["breakout"]:
                     chart = plot_chart(df, symbol, pattern, interval)
-                    caption = f"📣 Wedge Breakout detected!
+caption = f"📉 Wedge Breakout detected!\nSymbol: {symbol}\nTimeframe: {tf}\nBreakout Price: {price}"
 Symbol: {symbol}
 Interval: {interval.upper()}
 Direction: {pattern['direction'].upper()}"
